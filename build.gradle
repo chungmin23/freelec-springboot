@@ -34,6 +34,7 @@ repositories {
 //스프링부트web, 롬복, jpa등등을 사용할 수 있는 장소다.
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.projectlombok:lombok')
     testCompile('org.springframework.boot:spring-boot-starter-test')
 
 }
