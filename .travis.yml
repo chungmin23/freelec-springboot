@@ -6,6 +6,10 @@ branches:
   only:
     - master
 
+
+before_install:
+  - chmod +x gradlew
+
 #
 # Travis CI 서버의 Home
 cache:
@@ -15,8 +19,6 @@ cache:
 
 script: "./gradlew clean build"
 
-before_install:
-  - chmod +x gradlew
 
 before_deploy:
 #  - zip -r freelec-springboot2-webservice *
